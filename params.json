@@ -1,0 +1,77 @@
+{
+    "V_belt_params": {
+        "P_in": 4.48,
+        "@P_in": "输入功率",
+        "K_A": 1.1,
+        "n_m": 1440,
+        "d_d1": [
+            "80",
+            "100"
+        ],
+        "i": 3,
+        "belt_type": "A",
+        "@belt_type": "现在只能选A带, 不过应该满足大部分的需求",
+        "P1": 1.07,
+        "delta_P1": 0.03
+    },
+    
+    "@gear_wheel_params": "二级传动齿轮的参数设置",
+    "gear_wheel_params": {
+        "high_velocity": {
+            "material": "45 steel",
+            "@material": "现在只能选择45钢",
+            "impact type worker": "little",
+            "impact type motioner": "middle",
+            "@impact type": "分别是原动机和工作机的冲击模式",
+            "precision": 9,
+            "i": 4.42,
+            "@i": "传动比",
+            "z1": 29,
+            "gamma": 1.0,
+            "n1": 488.3,
+            "th": {
+                "year": 10,
+                "days": 300,
+                "hours": 8
+            },
+            "S_Hlim": 1.05,
+            "S_Flim": 1.25,
+            "@S": "两个安全系数",
+            "Z_lvr_1": 1.0,
+            "Z_lvr_2": 1.0,
+            "@Z_lvr": "这两个一般取1就行",
+            "K_t": 1.8,
+            "@K_t": "初选齿轮计算载荷系数",
+            "P_in": 6.12,
+            "@P_in": "输入功率",
+            "Psi_d": 1.0,
+            "Z_H": 2.5,
+            "Z_beta": 1
+        },
+
+        "low_velocity": {
+            "material": "45 steel",
+            "impact type worker": "little",
+            "impact type motioner": "middle",
+            "precision": 9,
+            "i": 3.17,
+            "z1": 33,
+            "gamma": 1.0,
+            "n1": 154.7,
+            "th": {
+                "year": 10,
+                "days": 300,
+                "hours": 8
+            },
+            "S_Hlim": 1.05,
+            "S_Flim": 1.25,
+            "Z_lvr_1": 1.0,
+            "Z_lvr_2": 1.0,
+            "K_t": 1.8,
+            "P_in": 5.82,
+            "Psi_d": 1.0,
+            "Z_H": 2.5,
+            "Z_beta": 1
+        }
+    }
+}
